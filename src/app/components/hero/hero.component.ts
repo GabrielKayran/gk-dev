@@ -11,6 +11,7 @@ import {
   afterNextRender,
 } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { TranslatePipe } from '@ngx-translate/core';
 
 interface Particle {
   x: number;

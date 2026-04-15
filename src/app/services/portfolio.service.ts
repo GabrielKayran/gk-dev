@@ -8,8 +8,7 @@ export class PortfolioService {
       company: 'NTT DATA Europe & Latam',
       role: 'Senior Software Developer',
       period: 'set/2025 – presente',
-      description:
-        'Desenvolvedor Fullstack no sistema de Gerenciamento de Higiene de Processos da AB InBev. Arquitetura de micro front-ends com Angular 19, APIs em .NET/C#, testes com xUnit, integração com Redis e Azure.',
+      description: 'EXPERIENCE.NTT.DESCRIPTION',
       techs: ['Angular 19', 'RxJS', '.NET', 'C#', 'xUnit', 'Redis', 'Azure', 'Microfrontends'],
       current: true,
     },
@@ -17,8 +16,7 @@ export class PortfolioService {
       company: 'Mottu',
       role: 'Front-end Developer',
       period: 'mar/2024 – set/2025',
-      description:
-        'Interfaces complexas com Angular 13 e Angular Material. Biblioteca interna de componentes para equipe de manutenção. Demandas fullstack com NestJS e .NET. Observabilidade com Datadog e pipelines com GitHub Actions.',
+      description: 'EXPERIENCE.MOTTU.DESCRIPTION',
       techs: ['Angular 13', 'RxJS', 'NestJS', 'C#', 'Datadog', 'GitHub Actions', 'Cloudflare'],
       current: false,
     },
@@ -26,8 +24,7 @@ export class PortfolioService {
       company: 'Bioma Investimentos',
       role: 'Desenvolvedor Web',
       period: 'set/2023 – mar/2024',
-      description:
-        'Único responsável pelo front-end de sistemas para o setor de laticínios com ReactJS e NextJS. Foco em componentização, gerenciamento de estado e responsividade.',
+      description: 'EXPERIENCE.BIOMA.DESCRIPTION',
       techs: ['ReactJS', 'NextJS', 'TypeScript'],
       current: false,
     },
@@ -35,19 +32,19 @@ export class PortfolioService {
 
   readonly skillGroups = signal<SkillGroup[]>([
     {
-      category: 'Front-end',
+      category: 'SKILLS.CATEGORY.FRONTEND',
       skills: ['Angular', 'RxJS', 'TypeScript', 'React', 'Next.js', 'Angular Material'],
     },
     {
-      category: 'Back-end',
+      category: 'SKILLS.CATEGORY.BACKEND',
       skills: ['NestJS', '.NET', 'C#'],
     },
     {
-      category: 'DevOps & Infra',
+      category: 'SKILLS.CATEGORY.DEVOPS',
       skills: ['GitHub Actions', 'Datadog', 'Azure', 'Cloudflare', 'Redis'],
     },
     {
-      category: 'Conceitos',
+      category: 'SKILLS.CATEGORY.CONCEPTS',
       skills: ['Micro Front-ends', 'CI/CD', 'Testes Unitários', 'Arquitetura Orientada a Eventos'],
     },
   ]);
@@ -56,8 +53,7 @@ export class PortfolioService {
     {
       number: '01',
       title: 'Restaurant Management System',
-      description:
-        'Sistema completo de gestão de restaurante com backoffice operacional, cardápio público por QR Code, delivery próprio, pedidos em tempo real via Socket.IO, relatórios em Excel e insights com IA (Gemini). Deploy em produção.',
+      description: 'PROJECTS.RESTAURANT.DESCRIPTION',
       tags: ['Angular 21', 'NestJS', 'PostgreSQL', 'Prisma', 'Socket.IO', 'Gemini AI', 'Vercel'],
       githubUrls: [
         { label: 'API', url: 'https://github.com/GabrielKayran/restaurant-management-api' },
@@ -69,8 +65,7 @@ export class PortfolioService {
     {
       number: '02',
       title: 'Frontend Alignment Test',
-      description:
-        'Showcase interativo com 33 seções e 7 categorias para discussão de boas práticas Angular com o hub China. Compara anti-patterns e abordagens recomendadas com demos em tempo real cobrindo performance, reatividade, arquitetura, segurança e DX.',
+      description: 'PROJECTS.ALIGNMENT.DESCRIPTION',
       tags: ['Angular 21', 'TypeScript', 'RxJS', 'Angular CDK', 'SSR', 'ngx-translate', 'Vitest'],
       githubUrls: [
         { label: 'GitHub', url: 'https://github.com/GabrielKayran/frontend-alignment-test' },
@@ -81,8 +76,7 @@ export class PortfolioService {
     {
       number: '03',
       title: 'Sales API',
-      description:
-        'REST API em .NET 8 com Clean Architecture e DDD para gestão de vendas, produtos, carrinho e usuários. Inclui regras de desconto por volume, autenticação JWT, CQRS com MediatR, paginação e testes com xUnit e NSubstitute.',
+      description: 'PROJECTS.SALES.DESCRIPTION',
       tags: [
         '.NET 8',
         'C#',

@@ -1,0 +1,89 @@
+{
+  "NAV": {
+    "ABOUT": "About",
+    "EXPERIENCE": "Experience",
+    "SKILLS": "Skills",
+    "PROJECTS": "Projects",
+    "CONTACT": "Contact",
+    "CTA": "Get in touch"
+  },
+  "HERO": {
+    "TAGLINE": "// Just a software developer trying to keep things simple.",
+    "DESCRIPTION": "Developer passionate about creating high-impact digital experiences with Angular, micro front-end architecture, and code that scales.",
+    "CTA_PROJECTS": "View Projects",
+    "CTA_CONTACT": "Get in Touch"
+  },
+  "ABOUT": {
+    "SECTION": "01. about me",
+    "TITLE_1": "Building the future,",
+    "TITLE_2": "one component at a time.",
+    "P1": "Software developer with <span class=\"text-text-primary font-medium\">3+ years of experience</span>, passionate about high-performance front-end with a focus on Angular and scalable architectures. I turn complex requirements into fluid interfaces and code that any dev enjoys maintaining.",
+    "P2": "My experience ranges from enterprise systems at AB InBev to urban mobility platforms at Mottu — always with an obsession for quality, performance, and best practices.",
+    "P3": "I believe simplicity is the greatest sign of technical mastery.",
+    "TABS": {
+      "FOCUS": {
+        "LABEL": "What I'm working on",
+        "ITEM_1": "Angular apps that stay fast even as they grow",
+        "ITEM_2": "Front-end architecture that won't become a problem 6 months from now",
+        "ITEM_3": "Consistent API and backend integrations",
+        "ITEM_4": "Code organization with evolution in mind, not just delivery"
+      },
+      "APPROACH": {
+        "LABEL": "How I work",
+        "ITEM_1": "I prefer simple solutions that solve the problem well",
+        "ITEM_2": "I avoid unnecessary complexity from the start",
+        "ITEM_3": "I think about the medium-term impact of decisions",
+        "ITEM_4": "I aim for consistency over \"brilliance\""
+      }
+    }
+  },
+  "EXPERIENCE": {
+    "SECTION": "02. experience",
+    "TITLE_1": "Where I've",
+    "TITLE_2": "worked",
+    "CURRENT": "current",
+    "NTT": {
+      "DESCRIPTION": "Fullstack Developer on AB InBev's Process Hygiene Management system. Micro front-end architecture with Angular 19, .NET/C# APIs, xUnit testing, Redis and Azure integration."
+    },
+    "MOTTU": {
+      "DESCRIPTION": "Complex interfaces with Angular 13 and Angular Material. Internal component library for the maintenance team. Fullstack work with NestJS and .NET. Observability with Datadog and pipelines with GitHub Actions."
+    },
+    "BIOMA": {
+      "DESCRIPTION": "Sole front-end developer for dairy sector systems using ReactJS and NextJS. Focus on componentization, state management, and responsiveness."
+    }
+  },
+  "SKILLS": {
+    "SECTION": "03. skills",
+    "TITLE_1": "What I",
+    "TITLE_2": "master",
+    "CATEGORY": {
+      "FRONTEND": "Front-end",
+      "BACKEND": "Back-end",
+      "DEVOPS": "DevOps & Infra",
+      "CONCEPTS": "Concepts"
+    }
+  },
+  "PROJECTS": {
+    "SECTION": "04. projects",
+    "TITLE_1": "What I've",
+    "TITLE_2": "built",
+    "RESTAURANT": {
+      "DESCRIPTION": "Complete restaurant management system with operational backoffice, public QR Code menu, own delivery, real-time orders via Socket.IO, Excel reports, and AI insights (Gemini). Deployed to production."
+    },
+    "ALIGNMENT": {
+      "DESCRIPTION": "Interactive showcase with 33 sections and 7 categories for discussing Angular best practices with the China hub. Compares anti-patterns and recommended approaches with live demos covering performance, reactivity, architecture, security, and DX."
+    },
+    "SALES": {
+      "DESCRIPTION": "REST API in .NET 8 with Clean Architecture and DDD for managing sales, products, cart, and users. Includes volume discount rules, JWT authentication, CQRS with MediatR, pagination, and tests with xUnit and NSubstitute."
+    }
+  },
+  "CONTACT": {
+    "SECTION": "05. contact",
+    "TITLE_1": "Let's build something",
+    "TITLE_2": "together?",
+    "DESCRIPTION": "I enjoy exchanging ideas about technology, collaborating on interesting projects, or just having a conversation about dev."
+  },
+  "FOOTER": {
+    "RIGHTS": "All rights reserved."
+  }
+}

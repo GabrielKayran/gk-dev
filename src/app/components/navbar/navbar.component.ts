@@ -7,18 +7,22 @@ import {
   PLATFORM_ID,
 } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { TranslateService, TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
+  imports: [TranslatePipe],
   templateUrl: './navbar.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NavbarComponent {
   private platformId = inject(PLATFORM_ID);
+  private translate = inject(TranslateService);
 
   scrolled = signal(false);
   menuOpen = signal(false);
+  currentLang = signal(this.translate.currentLang ?? this.translate.defaultLang ?? 'pt');
 
   @HostListener('window:scroll')
   onScroll(): void {
@@ -35,11 +39,17 @@ export class NavbarComponent {
     this.menuOpen.set(false);
   }
 
+  switchLang(): void {
+    const next = this.currentLang() === 'pt' ? 'en' : 'pt';
+    this.translate.use(next);
+    this.currentLang.set(next);
+  }
+
   readonly navLinks = [
-    { label: 'Sobre', fragment: 'about' },
-    { label: 'Experiência', fragment: 'experience' },
-    { label: 'Skills', fragment: 'skills' },
-    { label: 'Projetos', fragment: 'projects' },
-    { label: 'Contato', fragment: 'contact' },
+    { labelKey: 'NAV.ABOUT', fragment: 'about' },
+    { labelKey: 'NAV.EXPERIENCE', fragment: 'experience' },
+    { labelKey: 'NAV.SKILLS', fragment: 'skills' },
+    { labelKey: 'NAV.PROJECTS', fragment: 'projects' },
+    { labelKey: 'NAV.CONTACT', fragment: 'contact' },
   ];
 }

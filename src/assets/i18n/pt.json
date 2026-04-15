@@ -1,0 +1,89 @@
+{
+  "NAV": {
+    "ABOUT": "Sobre",
+    "EXPERIENCE": "Experiência",
+    "SKILLS": "Skills",
+    "PROJECTS": "Projetos",
+    "CONTACT": "Contato",
+    "CTA": "Fale comigo"
+  },
+  "HERO": {
+    "TAGLINE": "// Just a software developer trying to keep things simple.",
+    "DESCRIPTION": "Desenvolvedor apaixonado por criar experiências digitais de alto impacto com Angular, arquitetura de micro front-ends e código que escala.",
+    "CTA_PROJECTS": "Ver Projetos",
+    "CTA_CONTACT": "Entrar em Contato"
+  },
+  "ABOUT": {
+    "SECTION": "01. sobre mim",
+    "TITLE_1": "Construindo o futuro,",
+    "TITLE_2": "um componente de cada vez.",
+    "P1": "Desenvolvedor de software com <span class=\"text-text-primary font-medium\">3+ anos de experiência</span>, apaixonado por front-end de alta performance, com foco em Angular e arquiteturas escaláveis. Transformo requisitos complexos em interfaces fluidas e código que qualquer dev gosta de manter.",
+    "P2": "Minha experiência vai de sistemas corporativos na AB InBev até plataformas de mobilidade urbana na Mottu — sempre com obsessão por qualidade, performance e boas práticas.",
+    "P3": "Acredito que simplicidade é o maior sinal de domínio técnico.",
+    "TABS": {
+      "FOCUS": {
+        "LABEL": "No que estou trabalhando",
+        "ITEM_1": "Aplicações Angular que continuam rápidas mesmo crescendo",
+        "ITEM_2": "Arquitetura front-end que não vira problema daqui a 6 meses",
+        "ITEM_3": "Integrações consistentes com APIs e backend",
+        "ITEM_4": "Organização de código pensando em evolução, não só entrega"
+      },
+      "APPROACH": {
+        "LABEL": "Como eu trabalho",
+        "ITEM_1": "Prefiro soluções simples que resolvem bem o problema",
+        "ITEM_2": "Evito complexidade desnecessária desde o início",
+        "ITEM_3": "Penso no impacto das decisões no médio prazo",
+        "ITEM_4": "Busco consistência mais do que \"genialidade\""
+      }
+    }
+  },
+  "EXPERIENCE": {
+    "SECTION": "02. experiência",
+    "TITLE_1": "Onde já",
+    "TITLE_2": "trabalhei",
+    "CURRENT": "atual",
+    "NTT": {
+      "DESCRIPTION": "Desenvolvedor Fullstack no sistema de Gerenciamento de Higiene de Processos da AB InBev. Arquitetura de micro front-ends com Angular 19, APIs em .NET/C#, testes com xUnit, integração com Redis e Azure."
+    },
+    "MOTTU": {
+      "DESCRIPTION": "Interfaces complexas com Angular 13 e Angular Material. Biblioteca interna de componentes para equipe de manutenção. Demandas fullstack com NestJS e .NET. Observabilidade com Datadog e pipelines com GitHub Actions."
+    },
+    "BIOMA": {
+      "DESCRIPTION": "Único responsável pelo front-end de sistemas para o setor de laticínios com ReactJS e NextJS. Foco em componentização, gerenciamento de estado e responsividade."
+    }
+  },
+  "SKILLS": {
+    "SECTION": "03. habilidades",
+    "TITLE_1": "O que eu",
+    "TITLE_2": "domino",
+    "CATEGORY": {
+      "FRONTEND": "Front-end",
+      "BACKEND": "Back-end",
+      "DEVOPS": "DevOps & Infra",
+      "CONCEPTS": "Conceitos"
+    }
+  },
+  "PROJECTS": {
+    "SECTION": "04. projetos",
+    "TITLE_1": "O que eu",
+    "TITLE_2": "construí",
+    "RESTAURANT": {
+      "DESCRIPTION": "Sistema completo de gestão de restaurante com backoffice operacional, cardápio público por QR Code, delivery próprio, pedidos em tempo real via Socket.IO, relatórios em Excel e insights com IA (Gemini). Deploy em produção."
+    },
+    "ALIGNMENT": {
+      "DESCRIPTION": "Showcase interativo com 33 seções e 7 categorias para discussão de boas práticas Angular com o hub China. Compara anti-patterns e abordagens recomendadas com demos em tempo real cobrindo performance, reatividade, arquitetura, segurança e DX."
+    },
+    "SALES": {
+      "DESCRIPTION": "REST API em .NET 8 com Clean Architecture e DDD para gestão de vendas, produtos, carrinho e usuários. Inclui regras de desconto por volume, autenticação JWT, CQRS com MediatR, paginação e testes com xUnit e NSubstitute."
+    }
+  },
+  "CONTACT": {
+    "SECTION": "05. contato",
+    "TITLE_1": "Vamos construir algo",
+    "TITLE_2": "juntos?",
+    "DESCRIPTION": "Gosto de trocar ideias sobre tecnologia, colaborar em projetos interessantes ou simplesmente bater um papo sobre dev."
+  },
+  "FOOTER": {
+    "RIGHTS": "Todos os direitos reservados."
+  }
+}

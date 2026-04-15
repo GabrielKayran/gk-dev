@@ -1,3 +1,138 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
 
 @import 'tailwindcss';
+
+@theme {
+  --color-bg-base: #080810;
+  --color-violet-electric: #7C3AED;
+  --color-cyan-electric: #06B6D4;
+  --color-text-primary: #F1F5F9;
+  --color-text-muted: #94A3B8;
+  --font-family-sans: 'Inter', sans-serif;
+  --font-family-mono: 'Fira Code', monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #080810;
+  color: #F1F5F9;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+
+.gradient-text {
+  background: linear-gradient(to right, #7C3AED, #06B6D4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+}
+
+.gradient-border {
+  background: linear-gradient(#080810, #080810) padding-box,
+              linear-gradient(to right, #7C3AED, #06B6D4) border-box;
+  border: 1px solid transparent;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gradient-border:hover {
+  background: linear-gradient(rgba(124, 58, 237, 0.12), rgba(6, 182, 212, 0.08)) padding-box,
+              linear-gradient(to right, #7C3AED, #06B6D4) border-box;
+  box-shadow: 0 0 16px rgba(124, 58, 237, 0.25);
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Timeline dot pulse */
+@keyframes pulse-violet {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(124, 58, 237, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(124, 58, 237, 0); }
+}
+
+.dot-pulse {
+  animation: pulse-violet 2s infinite;
+}
+
+/* Hero glows */
+.hero-glow-violet {
+  background: radial-gradient(circle, #7C3AED, transparent);
+}
+
+.hero-glow-cyan {
+  background: radial-gradient(circle, #06B6D4, transparent);
+}
+
+/* Primary CTA button */
+.btn-primary {
+  background: linear-gradient(to right, #7C3AED, #06B6D4);
+  box-shadow: 0 4px 24px rgba(124, 58, 237, 0.3);
+}
+
+/* Experience timeline dot */
+.dot-gradient {
+  background: linear-gradient(135deg, #7C3AED, #06B6D4);
+}
+
+.dot-inactive {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Experience badges */
+.badge-current {
+  background: rgba(124, 58, 237, 0.2);
+  color: #7C3AED;
+  border: 1px solid rgba(124, 58, 237, 0.3);
+}
+
+.badge-tech {
+  background: rgba(6, 182, 212, 0.1);
+  color: #06B6D4;
+  border: 1px solid rgba(6, 182, 212, 0.2);
+}
+
+/* Skill tag */
+.skill-tag {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Project tag */
+.project-tag {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Footer divider */
+.footer-divider {
+  background: linear-gradient(to right, transparent, #7C3AED, #06B6D4, transparent);
+}
+
+/* Blinking cursor */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}

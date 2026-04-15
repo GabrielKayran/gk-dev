@@ -1,0 +1,35 @@
+<section id="skills" class="py-24 px-6">
+  <div class="max-w-6xl mx-auto">
+
+    <div [appScrollReveal]="0" class="mb-16">
+      <p class="font-mono text-violet-electric text-sm mb-3">03. habilidades</p>
+      <h2 class="text-4xl font-bold text-text-primary">
+        O que eu <span class="gradient-text">domino</span>
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      @for (group of skillGroups(); track group.category; let i = $index) {
+        <div class="glass-card p-6" [appScrollReveal]="i * 80 + 100">
+
+          <h3 class="font-mono text-sm text-violet-electric mb-5 flex items-center gap-2">
+            <span class="text-cyan-electric">//</span>
+            {{ group.category }}
+          </h3>
+
+          <div class="flex flex-wrap gap-3">
+            @for (skill of group.skills; track skill) {
+              <span
+                class="skill-tag px-3 py-1.5 rounded-lg font-mono text-sm text-text-muted transition-all duration-200 hover:text-text-primary hover:border-violet-electric/50 hover:bg-violet-electric/10"
+              >
+                {{ skill }}
+              </span>
+            }
+          </div>
+
+        </div>
+      }
+    </div>
+
+  </div>
+</section>

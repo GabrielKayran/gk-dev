@@ -1,0 +1,39 @@
+<section id="contact" class="py-24 px-6">
+  <div class="max-w-2xl mx-auto text-center">
+    <div [appScrollReveal]="0">
+      <p class="font-mono text-violet-electric text-sm mb-3">05. contato</p>
+      <h2 class="text-4xl font-bold text-text-primary mb-4">
+        Vamos construir algo <span class="gradient-text">juntos?</span>
+      </h2>
+      <p class="text-text-muted leading-relaxed mb-12">
+        Gosto de trocar ideias sobre tecnologia, colaborar em projetos interessantes ou simplesmente bater um papo sobre
+        dev.
+      </p>
+    </div>
+
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4" [appScrollReveal]="150">
+      @for (link of contactLinks(); track link.label; let i = $index) {
+        <a
+          [href]="link.url"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group flex items-center justify-center gap-3 glass-card px-6 py-4 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:border-violet-electric/30 min-w-40"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-5 h-5 text-violet-electric group-hover:text-cyan-electric transition-colors"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" [attr.d]="link.icon" />
+          </svg>
+          <span class="text-text-muted group-hover:text-text-primary transition-colors text-sm font-medium">
+            {{ link.label }}
+          </span>
+        </a>
+      }
+    </div>
+  </div>
+</section>

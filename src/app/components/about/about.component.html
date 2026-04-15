@@ -1,0 +1,57 @@
+<section id="about" class="py-24 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div [appScrollReveal]="0">
+        <p class="font-mono text-violet-electric text-sm mb-3">01. sobre mim</p>
+        <h2 class="text-4xl font-bold text-text-primary mb-6 leading-tight">
+          Construindo o futuro,<br />
+          <span class="gradient-text">um componente de cada vez.</span>
+        </h2>
+        <div class="space-y-4 text-text-muted leading-relaxed">
+          <p>
+            Desenvolvedor de software com <span class="text-text-primary font-medium">3+ anos de experiência</span>,
+            apaixonado por front-end de alta performance, com foco em Angular e arquiteturas escaláveis. Transformo
+            requisitos complexos em interfaces fluidas e código que qualquer dev gosta de manter.
+          </p>
+          <p>
+            Minha experiência vai de sistemas corporativos na AB InBev até plataformas de mobilidade urbana na Mottu —
+            sempre com obsessão por qualidade, performance e boas práticas.
+          </p>
+          <p>Acredito que simplicidade é o maior sinal de domínio técnico.</p>
+        </div>
+      </div>
+
+      <div [appScrollReveal]="150">
+        <div class="glass-card overflow-hidden">
+          <div class="flex border-b border-white/10">
+            @for (tab of tabs(); track tab.id) {
+              <button
+                class="flex-1 px-4 py-3 text-xs font-mono transition-all duration-200 relative"
+                [class.text-text-primary]="activeTab() === tab.id"
+                [class.text-text-muted]="activeTab() !== tab.id"
+                [class.bg-white/5]="activeTab() === tab.id"
+                (click)="setTab(tab.id)"
+              >
+                {{ tab.label }}
+                @if (activeTab() === tab.id) {
+                  <span
+                    class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-violet-electric to-cyan-electric"
+                  ></span>
+                }
+              </button>
+            }
+          </div>
+
+          <ul class="p-6 space-y-4 min-h-48">
+            @for (item of activeItems(); track item.text) {
+              <li class="flex items-start gap-3 text-sm text-text-muted">
+                <span class="text-violet-electric font-mono mt-0.5 shrink-0">{{ item.icon }}</span>
+                <span>{{ item.text }}</span>
+              </li>
+            }
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

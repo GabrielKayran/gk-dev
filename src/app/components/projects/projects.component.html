@@ -1,0 +1,69 @@
+<section id="projects" class="py-24 px-6">
+  <div class="max-w-6xl mx-auto">
+
+    <div [appScrollReveal]="0" class="mb-16">
+      <p class="font-mono text-violet-electric text-sm mb-3">04. projetos</p>
+      <h2 class="text-4xl font-bold text-text-primary">
+        O que eu <span class="gradient-text">construí</span>
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      @for (project of projects(); track project.number; let i = $index) {
+        <div
+          class="glass-card p-6 flex flex-col group transition-transform duration-300 hover:-translate-y-1"
+          [appScrollReveal]="i * 100 + 100"
+        >
+          <span class="text-6xl font-bold gradient-text leading-none mb-4 opacity-30 group-hover:opacity-60 transition-opacity">
+            {{ project.number }}
+          </span>
+
+          <h3 class="text-lg font-semibold text-text-primary mb-2">{{ project.title }}</h3>
+          <p class="text-text-muted text-sm leading-relaxed mb-4 flex-1">{{ project.description }}</p>
+
+          <div class="flex flex-wrap gap-2 mb-6">
+            @for (tag of project.tags; track tag) {
+              <span class="project-tag px-2 py-0.5 rounded text-xs font-mono text-text-muted">{{ tag }}</span>
+            }
+          </div>
+
+          <div class="flex flex-wrap gap-3">
+            @for (gh of project.githubUrls; track gh.label) {
+              <a
+                [href]="gh.url"
+                target="_blank"
+                rel="noopener noreferrer"
+                [attr.aria-disabled]="!project.available ? true : null"
+                [attr.tabindex]="!project.available ? -1 : null"
+                class="flex items-center gap-1.5 text-sm text-text-muted transition-colors duration-200"
+                [class.opacity-30]="!project.available"
+                [class.pointer-events-none]="!project.available"
+                [class.hover:text-text-primary]="project.available"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                {{ gh.label }}
+              </a>
+            }
+            @if (project.demoUrl !== '#') {
+              <a
+                [href]="project.demoUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center gap-1.5 text-sm text-text-muted transition-colors duration-200 hover:text-text-primary"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+                Demo
+              </a>
+            }
+          </div>
+
+        </div>
+      }
+    </div>
+
+  </div>
+</section>

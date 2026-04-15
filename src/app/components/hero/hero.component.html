@@ -1,0 +1,50 @@
+<section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <canvas #canvas class="absolute inset-0 w-full h-full pointer-events-none"></canvas>
+
+  <div class="absolute top-1/4 left-1/4 w-96 h-96 rounded-full opacity-10 blur-3xl hero-glow-violet"></div>
+  <div class="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full opacity-10 blur-3xl hero-glow-cyan"></div>
+
+  <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+    <div
+      class="inline-flex items-center gap-2 glass-card px-4 py-2 rounded-full mb-8 text-sm font-mono text-text-muted"
+    >
+      <span class="w-2 h-2 rounded-full bg-cyan-electric animate-pulse"></span>
+      <span>// Just a software developer trying to keep things simple.</span>
+    </div>
+
+    <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tight">
+      <span class="text-text-primary">Gabriel </span>
+      <span class="gradient-text">Kayran</span>
+    </h1>
+
+    <div class="h-12 flex items-center justify-center mb-8">
+      <p class="text-xl md:text-2xl font-mono text-text-muted">
+        <span class="text-violet-electric">&gt;</span>
+        <span class="ml-2 text-text-primary">{{ displayText() }}</span>
+        <span class="ml-0.5 text-violet-electric text-2xl leading-none" [class.opacity-0]="!showCursor()">|</span>
+      </p>
+    </div>
+
+    <p class="text-text-muted text-lg max-w-xl mx-auto mb-10 leading-relaxed">
+      Desenvolvedor apaixonado por criar experiências digitais de alto impacto com Angular, arquitetura de micro
+      front-ends e código que escala.
+    </p>
+
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a
+        href="#projects"
+        class="btn-primary px-8 py-3 rounded-xl font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
+      >
+        Ver Projetos
+      </a>
+      <a href="#contact" class="gradient-border px-8 py-3 rounded-xl font-semibold text-text-primary">
+        Entrar em Contato
+      </a>
+    </div>
+
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 opacity-40">
+      <span class="text-xs font-mono text-text-muted">scroll</span>
+      <div class="w-px h-8 bg-gradient-to-b from-violet-electric to-transparent"></div>
+    </div>
+  </div>
+</section>

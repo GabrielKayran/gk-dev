@@ -25,6 +25,7 @@ interface Particle {
 @Component({
   selector: 'app-hero',
   standalone: true,
+  imports: [TranslatePipe],
   templateUrl: './hero.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

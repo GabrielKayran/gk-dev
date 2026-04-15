@@ -1,41 +1,42 @@
 import { Component, ChangeDetectionStrategy, signal, computed } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive';
 
 interface Tab {
   id: string;
-  label: string;
-  items: { icon: string; text: string }[];
+  labelKey: string;
+  items: { icon: string; textKey: string }[];
 }
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [ScrollRevealDirective],
+  imports: [ScrollRevealDirective, TranslatePipe],
   templateUrl: './about.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AboutComponent {
-  activeTab = signal('foco');
+  activeTab = signal('focus');
 
   tabs = signal<Tab[]>([
     {
-      id: 'foco',
-      label: 'No que estou trabalhando',
+      id: 'focus',
+      labelKey: 'ABOUT.TABS.FOCUS.LABEL',
       items: [
-        { icon: '▸', text: 'Aplicações Angular que continuam rápidas mesmo crescendo' },
-        { icon: '▸', text: 'Arquitetura front-end que não vira problema daqui a 6 meses' },
-        { icon: '▸', text: 'Integrações consistentes com APIs e backend' },
-        { icon: '▸', text: 'Organização de código pensando em evolução, não só entrega' },
+        { icon: '▸', textKey: 'ABOUT.TABS.FOCUS.ITEM_1' },
+        { icon: '▸', textKey: 'ABOUT.TABS.FOCUS.ITEM_2' },
+        { icon: '▸', textKey: 'ABOUT.TABS.FOCUS.ITEM_3' },
+        { icon: '▸', textKey: 'ABOUT.TABS.FOCUS.ITEM_4' },
       ],
     },
     {
-      id: 'abordagem',
-      label: 'Como eu trabalho',
+      id: 'approach',
+      labelKey: 'ABOUT.TABS.APPROACH.LABEL',
       items: [
-        { icon: '▸', text: 'Prefiro soluções simples que resolvem bem o problema' },
-        { icon: '▸', text: 'Evito complexidade desnecessária desde o início' },
-        { icon: '▸', text: 'Penso no impacto das decisões no médio prazo' },
-        { icon: '▸', text: 'Busco consistência mais do que “genialidade”' },
+        { icon: '▸', textKey: 'ABOUT.TABS.APPROACH.ITEM_1' },
+        { icon: '▸', textKey: 'ABOUT.TABS.APPROACH.ITEM_2' },
+        { icon: '▸', textKey: 'ABOUT.TABS.APPROACH.ITEM_3' },
+        { icon: '▸', textKey: 'ABOUT.TABS.APPROACH.ITEM_4' },
       ],
     },
   ]);

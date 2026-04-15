@@ -9,7 +9,7 @@
       class="inline-flex items-center gap-2 glass-card px-4 py-2 rounded-full mb-8 text-sm font-mono text-text-muted"
     >
       <span class="w-2 h-2 rounded-full bg-cyan-electric animate-pulse"></span>
-      <span>// Just a software developer trying to keep things simple.</span>
+      <span>{{ 'HERO.TAGLINE' | translate }}</span>
     </div>
 
     <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tight">
@@ -26,8 +26,7 @@
     </div>
 
     <p class="text-text-muted text-lg max-w-xl mx-auto mb-10 leading-relaxed">
-      Desenvolvedor apaixonado por criar experiências digitais de alto impacto com Angular, arquitetura de micro
-      front-ends e código que escala.
+      {{ 'HERO.DESCRIPTION' | translate }}
     </p>
 
     <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -35,10 +34,10 @@
         href="#projects"
         class="btn-primary px-8 py-3 rounded-xl font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
       >
-        Ver Projetos
+        {{ 'HERO.CTA_PROJECTS' | translate }}
       </a>
       <a href="#contact" class="gradient-border px-8 py-3 rounded-xl font-semibold text-text-primary">
-        Entrar em Contato
+        {{ 'HERO.CTA_CONTACT' | translate }}
       </a>
     </div>
 

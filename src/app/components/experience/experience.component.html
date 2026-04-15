@@ -1,20 +1,20 @@
 <section id="experience" class="py-24 px-6">
   <div class="max-w-4xl mx-auto">
-
     <div [appScrollReveal]="0" class="mb-16">
-      <p class="font-mono text-violet-electric text-sm mb-3">02. experiência</p>
+      <p class="font-mono text-violet-electric text-sm mb-3">{{ 'EXPERIENCE.SECTION' | translate }}</p>
       <h2 class="text-4xl font-bold text-text-primary">
-        Onde já <span class="gradient-text">trabalhei</span>
+        {{ 'EXPERIENCE.TITLE_1' | translate }} <span class="gradient-text">{{ 'EXPERIENCE.TITLE_2' | translate }}</span>
       </h2>
     </div>
 
     <div class="relative">
-      <div class="absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-violet-electric via-violet-electric/30 to-transparent"></div>
+      <div
+        class="absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-violet-electric via-violet-electric/30 to-transparent"
+      ></div>
 
       <div class="space-y-12">
         @for (exp of experiences(); track exp.company; let i = $index) {
           <div class="relative pl-16" [appScrollReveal]="i * 120">
-
             <div
               class="absolute left-0 top-1 w-8 h-8 rounded-full flex items-center justify-center"
               [class.dot-pulse]="exp.current"
@@ -34,13 +34,13 @@
                   <span class="font-mono text-text-muted text-xs">{{ exp.period }}</span>
                   @if (exp.current) {
                     <span class="px-2 py-0.5 rounded-full text-xs font-mono badge-current">
-                      atual
+                      {{ 'EXPERIENCE.CURRENT' | translate }}
                     </span>
                   }
                 </div>
               </div>
 
-              <p class="text-text-muted text-sm leading-relaxed mb-4">{{ exp.description }}</p>
+              <p class="text-text-muted text-sm leading-relaxed mb-4">{{ exp.description | translate }}</p>
 
               <div class="flex flex-wrap gap-2">
                 @for (tech of exp.techs; track tech) {
@@ -48,11 +48,9 @@
                 }
               </div>
             </div>
-
           </div>
         }
       </div>
     </div>
-
   </div>
 </section>

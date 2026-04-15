@@ -1,20 +1,18 @@
 <section id="skills" class="py-24 px-6">
   <div class="max-w-6xl mx-auto">
-
     <div [appScrollReveal]="0" class="mb-16">
-      <p class="font-mono text-violet-electric text-sm mb-3">03. habilidades</p>
+      <p class="font-mono text-violet-electric text-sm mb-3">{{ 'SKILLS.SECTION' | translate }}</p>
       <h2 class="text-4xl font-bold text-text-primary">
-        O que eu <span class="gradient-text">domino</span>
+        {{ 'SKILLS.TITLE_1' | translate }} <span class="gradient-text">{{ 'SKILLS.TITLE_2' | translate }}</span>
       </h2>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       @for (group of skillGroups(); track group.category; let i = $index) {
         <div class="glass-card p-6" [appScrollReveal]="i * 80 + 100">
-
           <h3 class="font-mono text-sm text-violet-electric mb-5 flex items-center gap-2">
             <span class="text-cyan-electric">//</span>
-            {{ group.category }}
+            {{ group.category | translate }}
           </h3>
 
           <div class="flex flex-wrap gap-3">
@@ -26,10 +24,8 @@
               </span>
             }
           </div>
-
         </div>
       }
     </div>
-
   </div>
 </section>

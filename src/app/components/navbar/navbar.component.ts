@@ -22,7 +22,11 @@ export class NavbarComponent {
 
   scrolled = signal(false);
   menuOpen = signal(false);
-  currentLang = signal(this.translate.currentLang ?? this.translate.defaultLang ?? 'pt');
+  currentLang = signal<string>('pt');
+
+  constructor() {
+    this.translate.use('pt');
+  }
 
   @HostListener('window:scroll')
   onScroll(): void {

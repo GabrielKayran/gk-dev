@@ -23,10 +23,10 @@ export class NavbarComponent {
 
   scrolled = signal(false);
   menuOpen = signal(false);
-  currentLang = signal<string>('pt');
+  currentLang = signal<string>('en');
 
   constructor() {
-    this.translate.use('pt');
+    this.translate.use('en');
   }
 
   @HostListener('window:scroll')

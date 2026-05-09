@@ -31,7 +31,7 @@
                   <p class="text-violet-electric font-medium text-sm">{{ exp.company }}</p>
                 </div>
                 <div class="flex items-center gap-2">
-                  <span class="font-mono text-text-muted text-xs">{{ exp.period }}</span>
+                  <span class="font-mono text-text-muted text-xs">{{ exp.period | translate }}</span>
                   @if (exp.current) {
                     <span class="px-2 py-0.5 rounded-full text-xs font-mono badge-current">
                       {{ 'EXPERIENCE.CURRENT' | translate }}

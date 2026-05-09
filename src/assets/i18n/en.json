@@ -9,7 +9,7 @@
   },
   "HERO": {
     "TAGLINE": "// Just a software developer trying to keep things simple.",
-    "DESCRIPTION": "Developer passionate about creating high-impact digital experiences with Angular, micro front-end architecture, and code that scales.",
+    "DESCRIPTION": "Every line of code has a purpose.",
     "CTA_PROJECTS": "View Projects",
     "CTA_CONTACT": "Get in Touch"
   },
@@ -43,12 +43,15 @@
     "TITLE_2": "worked",
     "CURRENT": "current",
     "NTT": {
+      "PERIOD": "Sep/2025 – present",
       "DESCRIPTION": "Fullstack Developer on AB InBev's Process Hygiene Management system. Micro front-end architecture with Angular 19, .NET/C# APIs, xUnit testing, Redis and Azure integration."
     },
     "MOTTU": {
+      "PERIOD": "Mar/2024 – Sep/2025",
       "DESCRIPTION": "Complex interfaces with Angular 13 and Angular Material. Internal component library for the maintenance team. Fullstack work with NestJS and .NET. Observability with Datadog and pipelines with GitHub Actions."
     },
     "BIOMA": {
+      "PERIOD": "Sep/2023 – Mar/2024",
       "DESCRIPTION": "Sole front-end developer for dairy sector systems using ReactJS and NextJS. Focus on componentization, state management, and responsiveness."
     }
   },

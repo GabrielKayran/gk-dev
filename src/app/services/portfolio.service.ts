@@ -7,7 +7,7 @@ export class PortfolioService {
     {
       company: 'NTT DATA Europe & Latam',
       role: 'Senior Software Developer',
-      period: 'set/2025 – presente',
+      period: 'EXPERIENCE.NTT.PERIOD',
       description: 'EXPERIENCE.NTT.DESCRIPTION',
       techs: ['Angular 19', 'RxJS', '.NET', 'C#', 'xUnit', 'Redis', 'Azure', 'Microfrontends'],
       current: true,
@@ -15,7 +15,7 @@ export class PortfolioService {
     {
       company: 'Mottu',
       role: 'Front-end Developer',
-      period: 'mar/2024 – set/2025',
+      period: 'EXPERIENCE.MOTTU.PERIOD',
       description: 'EXPERIENCE.MOTTU.DESCRIPTION',
       techs: ['Angular 13', 'RxJS', 'NestJS', 'C#', 'Datadog', 'GitHub Actions', 'Cloudflare'],
       current: false,
@@ -23,7 +23,7 @@ export class PortfolioService {
     {
       company: 'Bioma Investimentos',
       role: 'Desenvolvedor Web',
-      period: 'set/2023 – mar/2024',
+      period: 'EXPERIENCE.BIOMA.PERIOD',
       description: 'EXPERIENCE.BIOMA.DESCRIPTION',
       techs: ['ReactJS', 'NextJS', 'TypeScript'],
       current: false,

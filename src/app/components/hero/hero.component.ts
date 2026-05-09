@@ -35,7 +35,13 @@ export class HeroComponent {
 
   canvasRef = viewChild<ElementRef<HTMLCanvasElement>>('canvas');
 
-  readonly titles = signal(['Software Developer', 'Angular', 'Micro Frontend', 'TypeScript']);
+  readonly titles = signal([
+    'Problem Solver',
+    'Software Developer',
+    'Angular',
+    'Micro Frontend',
+    'TypeScript',
+  ]);
 
   currentTitle = signal(0);
   displayText = signal('');

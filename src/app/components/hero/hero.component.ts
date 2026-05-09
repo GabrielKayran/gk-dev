@@ -36,11 +36,13 @@ export class HeroComponent {
   canvasRef = viewChild<ElementRef<HTMLCanvasElement>>('canvas');
 
   readonly titles = signal([
-    'Problem Solver',
     'Software Developer',
     'Angular',
+    'Problem Solver',
     'Micro Frontend',
     'TypeScript',
+    'C# .NET',
+    'NestJS',
   ]);
 
   currentTitle = signal(0);

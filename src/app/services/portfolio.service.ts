@@ -45,7 +45,14 @@ export class PortfolioService {
     },
     {
       category: 'SKILLS.CATEGORY.CONCEPTS',
-      skills: ['Micro Front-ends', 'CI/CD', 'Testes Unitários', 'Arquitetura Orientada a Eventos'],
+      skills: [
+        'SKILLS.CONCEPTS.MICRO_FRONTENDS',
+        'SKILLS.CONCEPTS.CICD',
+        'SKILLS.CONCEPTS.CLEAN_CODE_SOLID',
+        'SKILLS.CONCEPTS.DDD_CLEAN_ARCH',
+        'SKILLS.CONCEPTS.CQRS_EVENT_DRIVEN',
+        'SKILLS.CONCEPTS.TDD',
+      ],
     },
   ]);
 

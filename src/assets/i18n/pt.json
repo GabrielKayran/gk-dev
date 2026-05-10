@@ -64,6 +64,22 @@
       "BACKEND": "Back-end",
       "DEVOPS": "DevOps & Infra",
       "CONCEPTS": "Conceitos"
+    },
+    "CONCEPTS": {
+      "MICRO_FRONTENDS": "Micro Front-ends",
+      "CICD": "CI/CD",
+      "UNIT_TESTS": "Testes Unitários",
+      "EVENT_DRIVEN": "Arquitetura Orientada a Eventos",
+      "CLEAN_CODE": "Clean Code",
+      "DDD": "DDD",
+      "CLEAN_ARCHITECTURE": "Clean Architecture",
+      "CQRS": "CQRS",
+      "TDD": "TDD",
+      "SOLID": "SOLID",
+      "REST_APIS": "REST APIs",
+      "CLEAN_CODE_SOLID": "Clean Code & SOLID",
+      "DDD_CLEAN_ARCH": "DDD & Clean Architecture",
+      "CQRS_EVENT_DRIVEN": "CQRS & Event-Driven"
     }
   },
   "PROJECTS": {

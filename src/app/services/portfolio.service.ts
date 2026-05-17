@@ -66,7 +66,7 @@ export class PortfolioService {
         { label: 'API', url: 'https://github.com/GabrielKayran/restaurant-management-api' },
         { label: 'Front', url: 'https://github.com/GabrielKayran/restaurant-management-front' },
       ],
-      demoUrl: 'https://restaurant-management-front.vercel.app/',
+      demoUrl: 'https://restaurant.kayran.dev.br/landing',
       available: true,
     },
     {
